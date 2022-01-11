@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.socials {
+    list-style-type: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
