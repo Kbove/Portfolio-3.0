@@ -8,7 +8,6 @@ import img2 from './images/boarding.jpeg'
 
 export default function About() {
     const imgArray = [img0, img1, img2]
-
     const [hobbyImage, setImage] = useState(0)
 
     return (
