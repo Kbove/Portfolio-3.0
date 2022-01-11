@@ -1,8 +1,21 @@
+.about-container {
+    margin-top: 100px;
+}
+
 .first-row-container {
     margin: 30px;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.blurb-container {
+    max-width: 500px;
+    margin-left: 20px;
 }
 
 .second-row-container {
@@ -11,3 +24,12 @@
     display: flex;
     align-items: center;
 }
+
+.hobby-image-container {
+    padding: 20px;
+}
+
+.skills-container {
+    list-style-type: none;
+}
+
