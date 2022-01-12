@@ -1,0 +1,28 @@
+.portfolio-container {
+    justify-content: center;
+    display: block;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.full-stack {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.app-title {
+    color: blue;
+}
+
+.frontend {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.backend {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
