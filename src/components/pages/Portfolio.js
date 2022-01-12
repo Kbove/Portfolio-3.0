@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import '../styles/portfolio.css'
 import quizIMG from './images/quiz.JPG'
 import weatherIMG from './images/weather.JPG'
@@ -68,26 +68,58 @@ export default function Portfolio() {
     const [frontendIndex, setFrontend] = useState(0)
     const [backendIndex, setBackend] = useState(0)
 
+    const fullstackCont = document.querySelector('.full-stack')
+    const frontCont = document.querySelector('.frontend')
+    const backCont = document.querySelector('.backend')
+    const fullBtn = document.querySelector('view-full')
+    const frontBtn = document.querySelector('view-front')
+    const backBtn = document.querySelector('view-back')
 
+    // fullBtn.addEventListener('click', () => {
+    //     if (fullstackCont.getAttribute('hidden')) {
+    //         frontCont.setAttribute('hidden')
+    //         backCont.setAttribute('hidden')
+    //         fullstackCont.removeAttribute('hidden')
+    //     } else if (fullstackCont.getAttribute('hidden') === null) {
+    //         return
+    //     }
+    // })
+
+    // frontBtn.addEventListener('click', () => {
+    //     if (frontBtn.getAttribute('hidden')) {
+    //         frontCont.removeAttribute('hidden')
+    //         backCont.setAttribute('hidden')
+    //         fullstackCont.setAttribute('hidden')
+    //     } else if (frontCont.getAttribute('hidden') === null) {
+    //         return
+    //     }
+    // })
+    
+    
 
     return (
         <div className='portfolio-container'>
+            <div className='button-container'>
+            <button className='view-full'>View Full Stack</button>
+            <button className='view-front'>View Front-End</button>
+            <button className='view-back'>View Back-End</button>
+            </div>
             <div className='full-stack'>
-                <h3 className='type-title'>Full-Stack: <span className='app-title'><a href={fullStackArray[fullstackIndex].link}>{fullStackArray[fullstackIndex].app}</a></span></h3>
+                <h4 className='type-title'>Full-Stack: <span className='app-title'><a href={fullStackArray[fullstackIndex].link}>{fullStackArray[fullstackIndex].app}</a></span></h4>
                 <button className='left-btn' onClick={() => setFullStack(fullstackIndex == 0 ? fullStackArray.length - 1 : fullstackIndex - 1)}><FaArrowLeft /></button>
                 <img style={{width: '600px', margin: '20px'}} src={fullStackArray[fullstackIndex].image} className='fullstack-img'></img>
                 <button className='right-btn' onClick={() => setFullStack(fullstackIndex == fullStackArray.length - 1 ? 0 : fullstackIndex + 1)}><FaArrowRight /></button>
                 <p>{fullStackArray[fullstackIndex].description}</p>
             </div>
-            <div className='frontend'>
-                <h3 className='type-title'>Front-End: <span className='app-title'><a href={frontendArray[frontendIndex].link}>{frontendArray[frontendIndex].app}</a></span></h3>
+            <div hidden className='frontend'>
+                <h4 className='type-title'>Front-End: <span className='app-title'><a href={frontendArray[frontendIndex].link}>{frontendArray[frontendIndex].app}</a></span></h4>
                 <button className='left-btn' onClick={() => setFrontend(frontendIndex == 0 ? frontendArray.length - 1 : frontendIndex - 1)}><FaArrowLeft /></button>
                 <img style={{width: '600px', margin: '20px'}} className='frontend-img' src={frontendArray[frontendIndex].image}></img>
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
                 <p>{frontendArray[frontendIndex].description}</p>
             </div>
-            <div className='backend'>
-                <h3 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h3>
+            <div hidden className='backend'>
+                <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
                 <button className='left-btn' onClick={() => setBackend(backendIndex == 0 ? backendArray.length - 1 : backendIndex - 1)}><FaArrowLeft /></button>
                 <img style={{width: '600px', margin: '20px'}} className='backend-img' src={backendArray[backendIndex].image}></img>
                 <button className='right-btn' onClick={() => setBackend(backendIndex == backendArray.length - 1 ? 0 : backendIndex + 1)}><FaArrowRight /></button>

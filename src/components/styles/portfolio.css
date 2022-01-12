@@ -5,6 +5,13 @@
     margin-top: 50px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
 .full-stack {
     justify-content: center;
     align-items: center;
