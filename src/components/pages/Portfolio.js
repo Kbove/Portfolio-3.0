@@ -4,7 +4,7 @@ import quizIMG from './images/quiz.JPG'
 import weatherIMG from './images/weather.JPG'
 import rmgIMG from './images/rmg.JPG'
 import emsIMG from './images/ems.JPG'
-import chessIMG from './images/chess.png'
+import chessIMG from './images/chess.JPG'
 import blogIMG from './images/blog.JPG'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
