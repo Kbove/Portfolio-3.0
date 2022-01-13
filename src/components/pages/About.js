@@ -23,7 +23,7 @@ export default function About() {
                         learn how to code.
                         <br />
                         <br />
-                        Although a daunting task at first, I started to really enjoy coding. Being able to build something from nothing but equations and logic is stimulating and engaging. Coming from a sales and marketing background, I find coding to be refreshing and engaging, and look forward to a future in web development as I look for opportunities.
+                        Although a daunting task at first, I started to really enjoy coding. Being able to build something from nothing but equations and logic is fascination. Coming from a sales and marketing background, I find coding to be refreshing and engaging, and look forward to a future in web development as I look for opportunities.
                     </p>
                 </div>
             </div>
