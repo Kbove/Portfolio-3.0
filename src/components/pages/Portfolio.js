@@ -24,7 +24,7 @@ export default function Portfolio() {
             image: quizIMG,
             description: 'A timed quiz with various trivia questions. Each question is presented with four multiple choice answers. Each correct answer grants the user a point, and each incorrect answer shaves 10 seconds off the time. Scores are saved in local storage and rendered to the page in descending order along with user initials.',
             tech: 'HTML, CSS, JavaScript',
-            link: 'https://kbove.github.io/Quiz-App/'
+            link: 'https://kbove.github.io/Quiz-App/subpage.html'
         }
     ]
     const backendArray = [
