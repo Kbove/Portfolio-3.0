@@ -1,5 +1,5 @@
 body {
-    /* background-image: linear-gradient(navy, lightblue) ; */
+    overflow-x: hidden; 
 }
 
 header {
