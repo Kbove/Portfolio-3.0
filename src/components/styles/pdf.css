@@ -29,9 +29,11 @@ a {
     .react-pdf__Page__canvas { 
         display: block; 
         user-select: none; 
-        max-width: 80vw;
-        max-height: 50vh;
         margin: 0 auto;
+        resize: both;
+        overflow: auto;
+        max-width: 300px;
+        max-height: 450px;
     }
 }
 
