@@ -6,7 +6,7 @@ function NavTabs ({ currentPage, handlePageChange}) {
     return (
         <body style={{backgroundColor: 'black'}}> 
             <header>
-                <h1>Kyle Bove: Full Stack Developer</h1>
+                <h1>Kyle Bove | <span style={{color: 'lightblue'}}>Full Stack Developer</span></h1>
                 <ul style={{display: 'flex'}} className='socials'>
                     <li><a style={{fontSize: 'xx-large', margin: '10px'}} href='https://www.linkedin.com/in/kyle-bove-mba-004a96aa/'><FaLinkedin/></a></li>
                     <li><a style={{fontSize: 'xx-large'}} href='https://github.com/Kbove'><FaGithub/></a></li>

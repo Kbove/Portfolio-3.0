@@ -110,7 +110,8 @@ export default function Portfolio() {
                 <button className='left-btn' onClick={() => setFullStack(fullstackIndex == 0 ? fullStackArray.length - 1 : fullstackIndex - 1)}><FaArrowLeft /></button>
                 <img style={{ width: '600px', margin: '20px' }} src={fullStackArray[fullstackIndex].image} className='fullstack-img'></img>
                 <button className='right-btn' onClick={() => setFullStack(fullstackIndex == fullStackArray.length - 1 ? 0 : fullstackIndex + 1)}><FaArrowRight /></button>
-                <p>{fullStackArray[fullstackIndex].description}</p>
+                <p><h4>Description</h4>{fullStackArray[fullstackIndex].description}</p>
+                <p><h4>Tech Used:</h4>{fullStackArray[fullstackIndex].tech}</p>
 
             </div>
             <div hidden className='frontend'>
@@ -118,16 +119,16 @@ export default function Portfolio() {
                 <button className='left-btn' onClick={() => setFrontend(frontendIndex == 0 ? frontendArray.length - 1 : frontendIndex - 1)}><FaArrowLeft /></button>
                 <img style={{ width: '600px', margin: '20px' }} className='frontend-img' src={frontendArray[frontendIndex].image}></img>
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
-                <p>{frontendArray[frontendIndex].description}</p>
-
+                <p><h4>Description</h4>{frontendArray[frontendIndex].description}</p>
+                <p><h4>Tech Used:</h4>{frontendArray[frontendIndex].tech}</p>
             </div>
             <div hidden className='backend'>
                 <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
                 <button className='left-btn' onClick={() => setBackend(backendIndex == 0 ? backendArray.length - 1 : backendIndex - 1)}><FaArrowLeft /></button>
                 <img style={{ width: '600px', margin: '20px' }} className='backend-img' src={backendArray[backendIndex].image}></img>
                 <button className='right-btn' onClick={() => setBackend(backendIndex == backendArray.length - 1 ? 0 : backendIndex + 1)}><FaArrowRight /></button>
-                <p>{backendArray[backendIndex].description}</p>
-            </div>
+                <p><h4>Description</h4>{backendArray[backendIndex].description}</p>
+                <p><h4>Tech Used:</h4>{backendArray[backendIndex].tech}</p>            </div>
         </div>
     )
 }

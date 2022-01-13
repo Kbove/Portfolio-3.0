@@ -35,7 +35,7 @@ export default function Resume() {
         >
           <Page pageNumber={pageNumber} />
         </Document>
-        <p className='page'><button onClick={changePageNumber}>Page</button> {pageNumber} of {numPages}</p>
+        <p className='page'><button className='pageBtn' onClick={changePageNumber}>Page</button> {pageNumber} of {numPages}</p>
       </div>
     );
   }
