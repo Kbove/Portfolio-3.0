@@ -50,7 +50,7 @@ export default function Portfolio() {
             id: 1,
             app: "Let's Play Chess",
             image: chessIMG,
-            description: 'Play chess with friends! We built this project so that you can play live chess with the people you want',
+            description: 'Create an account, sign in, and add your friends to your friendlist to play a live game of chess',
             tech: 'Handlebars, Express.js, Node.js, Socket.io, MySQL, Sequelize, bcrypt, dotenv',
             link: 'https://letsplaychessproj2.herokuapp.com/'
         },
@@ -111,6 +111,7 @@ export default function Portfolio() {
                 <img style={{ width: '600px', margin: '20px' }} src={fullStackArray[fullstackIndex].image} className='fullstack-img'></img>
                 <button className='right-btn' onClick={() => setFullStack(fullstackIndex == fullStackArray.length - 1 ? 0 : fullstackIndex + 1)}><FaArrowRight /></button>
                 <p>{fullStackArray[fullstackIndex].description}</p>
+
             </div>
             <div hidden className='frontend'>
                 <h4 className='type-title'>Front-End: <span className='app-title'><a href={frontendArray[frontendIndex].link}>{frontendArray[frontendIndex].app}</a></span></h4>
@@ -118,6 +119,7 @@ export default function Portfolio() {
                 <img style={{ width: '600px', margin: '20px' }} className='frontend-img' src={frontendArray[frontendIndex].image}></img>
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
                 <p>{frontendArray[frontendIndex].description}</p>
+
             </div>
             <div hidden className='backend'>
                 <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
@@ -128,34 +130,4 @@ export default function Portfolio() {
             </div>
         </div>
     )
-
-    // const fullstackCont = document.querySelector('.full-stack')
-    // const frontCont = document.querySelector('.frontend')
-    // const backCont = document.querySelector('.backend')
-    // const fullBtn = document.querySelector('.view-full')
-    // const frontBtn = document.querySelector('.view-front')
-    // const backBtn = document.querySelector('.view-back')
-
-    // console.log('are these variables capturing elements', fullstackCont, fullBtn)
-
-
-    //     fullBtn.addEventListener('click', () => {
-    //     if (fullstackCont.getAttribute('hidden')) {
-    //         frontCont.setAttribute('hidden')
-    //         backCont.setAttribute('hidden')
-    //         fullstackCont.removeAttribute('hidden')
-    //     } else if (fullstackCont.getAttribute('hidden') === null) {
-    //         return
-    //     }
-    // })
-
-    // frontBtn.addEventListener('click', () => {
-    //     if (frontBtn.getAttribute('hidden')) {
-    //         frontCont.removeAttribute('hidden')
-    //         backCont.setAttribute('hidden')
-    //         fullstackCont.setAttribute('hidden')
-    //     } else if (frontCont.getAttribute('hidden') === null) {
-    //         return
-    //     }
-    // })
 }

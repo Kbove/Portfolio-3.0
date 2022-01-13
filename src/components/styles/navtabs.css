@@ -1,8 +1,17 @@
+body {
+    /* background-image: linear-gradient(navy, lightblue) ; */
+}
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     margin-bottom: 25px;
+    color: white;
+}
+
+header a {
+    color: white;
 }
 
 .socials {

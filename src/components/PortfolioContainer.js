@@ -3,6 +3,8 @@ import NavTabs from './NavTabs'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
+import background from './pages/images/Snowboard.jpg'
+
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About')
@@ -14,16 +16,17 @@ export default function PortfolioContainer() {
         if (currentPage === 'Portfolio') {
             return <Portfolio />
         }
-        // return <Resume />
+        return <Resume />
     }
 
     const handlePageChange = (page) => setCurrentPage(page)
 
     return (
-        <div>
+        <div style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <footer>
+                <p style={{textAlign: 'center', marginTop: '20px', color: 'white', backgroundColor: 'black', margin: 'auto'}}>Made with love by Kyle using React.js. Please contact me at <a style={{fontWeight: 'bold', color: 'white'}}href="mailto:kbove94@gmail.com">kbove94@gmail.com</a></p>
             </footer>
         </div>
     )

@@ -31,22 +31,30 @@ export default function About() {
             <br />
             <div className='second-row-container'>
                 <div className='skills-container'>
-                    <h3>Skills</h3>
+                    <div className='languages-container'>
+                    <h3>Languages</h3>
                     <li>HTML <FaHtml5 /></li>
                     <li>CSS <FaCss3 /></li>
                     <li>JavaScript <FaJs /></li>
-                    <li>API</li>
-                    <li>DOM</li>
                     <li>Node.js <FaNodeJs /></li>
-                    <li>Express</li>
                     <li>Handlebars</li>
+                    <li>React <FaReact /></li>
+                    <li>Express</li>
                     <li>MySQL</li>
                     <li>MONGO</li>
-                    <li>React <FaReact /></li>
+                    </div>
+                    <div className='concepts-container'>
+                    <h3>Concepts</h3>
+                    <li>API</li>
+                    <li>DOM</li>
+                    </div>
+                    <div className='tech-container'>
+                    <h3>Tech</h3>
                     <li>GitHub <FaGithub /></li>
                     <li>Heroku</li>
                     <li>Sequelize</li>
                     <li>Socket io</li>
+                    </div>
                 </div>
                 <div className='hobby-image-container'>
                     <button className='left-btn' onClick={() => setImage(hobbyImage == 0 ? 2 : hobbyImage - 1)}><FaArrowLeft /></button>

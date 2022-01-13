@@ -16,6 +16,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+}
+
+.full-stack a {
+    color: white;
+    text-decoration: none;
+}
+
+.frontend a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.backend a {
+    color: white;
+    text-decoration: none;
+
 }
 
 .app-title {
@@ -26,10 +44,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .backend {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }

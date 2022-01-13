@@ -1,30 +1,30 @@
 import React from 'react'
 import './styles/navtabs.css'
+import {FaLinkedin, FaGithub, FaNodeJs} from 'react-icons/fa'
 
 function NavTabs ({ currentPage, handlePageChange}) {
     return (
-        <body>
+        <body style={{backgroundColor: 'black'}}> 
             <header>
-                <h1>Kyle Bove: Full Stack Developer</h1> 
-                <ul className='socials'>
-                    <li>Linkedin Placeholder</li>
-                    <li>Github Placeholder</li>
-                    <li>Email Placeholder</li>
+                <h1>Kyle Bove: Full Stack Developer</h1>
+                <ul style={{display: 'flex'}} className='socials'>
+                    <li><a style={{fontSize: 'xx-large', margin: '10px'}} href='https://www.linkedin.com/in/kyle-bove-mba-004a96aa/'><FaLinkedin/></a></li>
+                    <li><a style={{fontSize: 'xx-large'}} href='https://github.com/Kbove'><FaGithub/></a></li>
                 </ul>
             </header>
             <div className='nav-container'>
-                <h2>
-            <a href='#about' onClick={() => handlePageChange('About')}
+                <h2 >
+            <a style={{color: 'white'}} href='#about' onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
                 About Me
             </a></h2>
             <h2>
-            <a href='#portfolio' onClick={() => handlePageChange('Portfolio')}
+            <a style={{color: 'white'}} href='#portfolio' onClick={() => handlePageChange('Portfolio')}
             className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
                 My Projects
             </a></h2>
             <h2>
-            <a href='#resume' onClick={() => handlePageChange('Resume')}
+            <a style={{color: 'white'}} href='#resume' onClick={() => handlePageChange('Resume')}
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
                 Resume
             </a></h2>
