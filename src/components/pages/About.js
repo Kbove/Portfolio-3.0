@@ -57,9 +57,9 @@ export default function About() {
                     </div>
                 </div>
                 <div className='hobby-image-container'>
-                    <button className='left-btn' onClick={() => setImage(hobbyImage == 0 ? 2 : hobbyImage - 1)}><FaArrowLeft /></button>
+                    <button className='left-about-btn' onClick={() => setImage(hobbyImage == 0 ? 2 : hobbyImage - 1)}><FaArrowLeft /></button>
                     <img style={{ width: '400px', margin: '20px' }} src={imgArray[hobbyImage]} className='hobbyImage'></img>
-                    <button className='right-btn' onClick={() => setImage(hobbyImage == imgArray.length - 1 ? 0 : hobbyImage + 1)}><FaArrowRight /></button>
+                    <button className='right-about-btn' onClick={() => setImage(hobbyImage == imgArray.length - 1 ? 0 : hobbyImage + 1)}><FaArrowRight /></button>
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@
     margin: 20px;
 }
 
-.left-btn {
+.left-about-btn {
     color: black;
     border: 2px solid rgb(2, 130, 216);
     border-radius: 0px;
@@ -67,12 +67,12 @@
     transition: ease-out 0.4s;
 }
 
-.left-btn:hover {
+.left-about-btn:hover {
     background-color: #4c6faf;
     color: white;
 }
 
-.right-btn {
+.right-about-btn {
     color: black;
     border: 2px solid rgb(2, 130, 216);
     border-radius: 0px;
@@ -88,7 +88,7 @@
     transition: ease-out 0.4s;
 }
 
-.right-btn:hover {
+.right-about-btn:hover {
     background-color: #4c6faf;
     color: white;
 }
@@ -123,7 +123,7 @@
 
     }
 
-    .left-btn {
+    .left-about-btn {
         position: absolute;
         top: -5%;
         left: 50%;
@@ -131,7 +131,7 @@
         /* margin-top: 30px; */
     }
 
-    .right-btn {
+    .right-about-btn {
         position: absolute;
         top: 105%;
         left: 50%;
