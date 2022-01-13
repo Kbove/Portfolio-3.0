@@ -93,3 +93,55 @@
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .first-row-container {
+        display: block;
+        align-items: center;
+    }
+
+    .headshot {
+        max-width: 85vw;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    .second-row-container {
+        display: block;
+    }
+
+    .skills-container {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .hobby-image-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .left-btn {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* margin-top: 30px; */
+    }
+
+    .right-btn {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img, svg {
+        justify-content: center;
+        max-width: 60vw;
+    }
+}
+
+
