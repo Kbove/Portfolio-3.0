@@ -132,6 +132,10 @@
     transition: ease-out 0.4s;
 }
 
+.portfolio-container {
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     .fullstack-img {
         max-width: 50vw;
