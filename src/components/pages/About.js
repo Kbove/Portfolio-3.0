@@ -16,14 +16,10 @@ export default function About() {
                 <img className='headshot' style={{ width: '400px' }} src={headshot} ></img>
                 <div className='blurb-container'>
                     <h3 className='about-me'>About Me</h3>
-                    <p>Hi! My name's Kyle and this is my portfolio. A little bit about me: I graduated from Whitworth
-                        Univerity in 2017 with a Bachelor's in Marketing and went on to pursue my Master's in Business
-                        Administration on an accelerated track in 2018. I found some success in tech sales, but I began
-                        craving something more stable, technical, and creative. I decided to make the change and try to
-                        learn how to code.
+                    <p>Hi! I’m Kyle and this is my portfolio. A little bit about me: I graduated from Whitworth University in 2017 with a Bachelor's Degree in Marketing and followed in 2018 with earning my Master's Degree in Business Administration on an accelerated track. I achieved success in SaaS technology sales, but I realized that I prefer more collaborative, technical, and creative work. So I decided to learn how to code.
                         <br />
                         <br />
-                        Although a daunting task at first, I started to really enjoy coding. Being able to build something from nothing but equations and logic is fascination. Coming from a sales and marketing background, I find coding to be refreshing and engaging, and look forward to a future in web development as I look for opportunities.
+                        Although very challenging at first, I started to really enjoy coding. Being able to build something from nothing using equations and logic is both rewarding and fascinating. Compared to sales and marketing, coding is refreshing and engaging, and I am looking forward to a future in development as I look for the right opportunities.
                     </p>
                 </div>
             </div>
