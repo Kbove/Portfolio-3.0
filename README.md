@@ -9,6 +9,8 @@ This is my new and improved web dev portfolio. Hopefully employers will like it!
 * [Installation](#Installation)
     
 * [User Story](#Usage)
+
+* [Features](#Features)
     
 * [Screenshot](#Screenshot)
 
@@ -23,6 +25,12 @@ The following necessary dependencies must be installed to run the application: C
     
 ## User Story <a id="Usage"></a>
 Portfolios are essential to any web developer. They can give others a view into the dev's skills and person
+
+## Features <a id="Features"></a>
+- Users can view my skills and blurb in the about me section, along with some pics
+- They can navigate to the Projects section to view my favorite projects by full stack, back end, and front end, and see what technologyies were used, links to the deployed projects, screenshots, and descriptions
+- In the Resume section they can see my full resume and download it as well
+- All my socials are displayed and linked
 
 ## Screenshot <a id='Screenshot'></a>
 ![screenshot](https://user-images.githubusercontent.com/89953218/149602491-ca3f99bc-44bf-40d9-920b-a4e59b1ef500.JPG)
