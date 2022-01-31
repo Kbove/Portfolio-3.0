@@ -121,7 +121,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setFullStack(fullstackIndex == fullStackArray.length - 1 ? 0 : fullstackIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{fullStackArray[fullstackIndex].description}</p>
                 <p><h4>Tech Used:</h4>{fullStackArray[fullstackIndex].tech}</p>
-                <p><h4>Repo Link:</h4>{fullStackArray[fullstackIndex].repoLink}</p>
+                <a href={fullStackArray[fullstackIndex].repoLink}><h4>Repo Link</h4></a>
 
             </div>
             <div hidden className='frontend'>
@@ -131,7 +131,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{frontendArray[frontendIndex].description}</p>
                 <p><h4>Tech Used:</h4>{frontendArray[frontendIndex].tech}</p>
-                <p><h4>Repo Link:</h4>{frontendArray[frontendIndex].repoLink}</p>
+                <a href={frontendArray[frontendIndex].repoLink}><h4>Repo Link</h4></a>
             </div>
             <div hidden className='backend'>
                 <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
@@ -140,7 +140,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setBackend(backendIndex == backendArray.length - 1 ? 0 : backendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{backendArray[backendIndex].description}</p>
                 <p><h4>Tech Used:</h4>{backendArray[backendIndex].tech}</p>
-                <p><h4>Repo Link:</h4>{backendArray[backendIndex].repoLink}</p>
+                <a href={backendArray[backendIndex].repoLink}><h4>Repo Link</h4></a>
             
                             </div>
         </div>
