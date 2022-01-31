@@ -38,7 +38,7 @@ export default function Portfolio() {
             description: 'A command line application that takes in user input in order to generate formatted readme files',
             tech: 'JavaScript, Node.js, NPM Inquirer',
             link: 'https://github.com/Kbove/README-Generator',
-            repoLink: 'https://github.com/Kbove/README-Generator'
+            repoLink: 'https://watch.screencastify.com/v/Hd6tt6GxfCE7d328GpgC'
 
         },
         {
@@ -48,7 +48,7 @@ export default function Portfolio() {
             description: 'A DataBase for employees utilizing MySQL, node js, and inquirer. Allows you to view departments, roles, and employees in formatted tables within the terminal',
             tech: 'MySQL, Node.js, NPM Inquirer',
             link: 'https://github.com/Kbove/Employee-Management-Database-working-',
-            repoLink: 'https://github.com/Kbove/Employee-Management-Database-working-'
+            repoLink: 'https://watch.screencastify.com/v/fd4YDcJHGb63YADK3T7L'
 
         }
     ]
@@ -131,7 +131,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{frontendArray[frontendIndex].description}</p>
                 <p><h4>Tech Used:</h4>{frontendArray[frontendIndex].tech}</p>
-                <a href={frontendArray[frontendIndex].repoLink}><h4>Repo Link</h4></a>
+                <a href={frontendArray[frontendIndex].repoLink}><h4>Walkthrough</h4></a>
             </div>
             <div hidden className='backend'>
                 <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
@@ -140,7 +140,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setBackend(backendIndex == backendArray.length - 1 ? 0 : backendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{backendArray[backendIndex].description}</p>
                 <p><h4>Tech Used:</h4>{backendArray[backendIndex].tech}</p>
-                <a href={backendArray[backendIndex].repoLink}><h4>Repo Link</h4></a>
+                <a href={backendArray[backendIndex].repoLink}><h4>Walkthrough</h4></a>
             
                             </div>
         </div>
