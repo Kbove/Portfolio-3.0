@@ -16,7 +16,8 @@ export default function Portfolio() {
             image: weatherIMG,
             description: 'A frontend application that uses an open API to fetch and display weather conditions via a search query, as well as display your search history.',
             tech: 'HTML, CSS, JavaScript, openweathermap.org/api',
-            link: 'https://kbove.github.io/Weather-Dashboard/'
+            link: 'https://kbove.github.io/Weather-Dashboard/',
+            repoLink: 'https://github.com/Kbove/Weather-Dashboard'
         },
         {
             id: 2,
@@ -24,7 +25,9 @@ export default function Portfolio() {
             image: quizIMG,
             description: 'A timed quiz with various trivia questions. Each question is presented with four multiple choice answers. Each correct answer grants the user a point, and each incorrect answer shaves 10 seconds off the time. Scores are saved in local storage and rendered to the page in descending order along with user initials.',
             tech: 'HTML, CSS, JavaScript',
-            link: 'https://kbove.github.io/Quiz-App/subpage.html'
+            link: 'https://kbove.github.io/Quiz-App/subpage.html',
+            repoLink: 'https://github.com/Kbove/Quiz-App'
+
         }
     ]
     const backendArray = [
@@ -34,7 +37,9 @@ export default function Portfolio() {
             image: rmgIMG,
             description: 'A command line application that takes in user input in order to generate formatted readme files',
             tech: 'JavaScript, Node.js, NPM Inquirer',
-            link: 'https://github.com/Kbove/README-Generator'
+            link: 'https://github.com/Kbove/README-Generator',
+            repoLink: 'https://github.com/Kbove/README-Generator'
+
         },
         {
             id: 2,
@@ -42,7 +47,9 @@ export default function Portfolio() {
             image: emsIMG,
             description: 'A DataBase for employees utilizing MySQL, node js, and inquirer. Allows you to view departments, roles, and employees in formatted tables within the terminal',
             tech: 'MySQL, Node.js, NPM Inquirer',
-            link: 'https://github.com/Kbove/Employee-Management-Database-working-'
+            link: 'https://github.com/Kbove/Employee-Management-Database-working-',
+            repoLink: 'https://github.com/Kbove/Employee-Management-Database-working-'
+
         }
     ]
     const fullStackArray = [
@@ -52,7 +59,8 @@ export default function Portfolio() {
             image: chessIMG,
             description: 'Create an account, sign in, and add your friends to your friendlist to play a live game of chess',
             tech: 'Handlebars, Express.js, Node.js, Socket.io, MySQL, Sequelize, bcrypt, dotenv',
-            link: 'https://letsplaychessproj2.herokuapp.com/'
+            link: 'https://letsplaychessproj2.herokuapp.com/',
+            repoLink: 'https://github.com/Kbove/Let-s-Play-Chess'
         },
         {
             id: 2,
@@ -60,7 +68,8 @@ export default function Portfolio() {
             image: blogIMG,
             description: "This is a full stack web application that uses handlebars, JavaScript, Express, Node, and MySQL. It's a simple mblog website where users can create an account, write blog posts, and interact with others via a comment board",
             tech: 'Handlebars, Express.js, Node.js, ',
-            link: 'https://tech-blog-redux.herokuapp.com/homepage'
+            link: 'https://tech-blog-redux.herokuapp.com/homepage',
+            repoLink: 'https://github.com/Kbove/Tech-Blog-Redux'
         }
     ]
 
@@ -112,6 +121,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setFullStack(fullstackIndex == fullStackArray.length - 1 ? 0 : fullstackIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{fullStackArray[fullstackIndex].description}</p>
                 <p><h4>Tech Used:</h4>{fullStackArray[fullstackIndex].tech}</p>
+                <p><h4>Repo Link:</h4>{fullStackArray[fullstackIndex].repoLink}</p>
 
             </div>
             <div hidden className='frontend'>
@@ -121,6 +131,7 @@ export default function Portfolio() {
                 <button className='right-btn' onClick={() => setFrontend(frontendIndex == frontendArray.length - 1 ? 0 : frontendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{frontendArray[frontendIndex].description}</p>
                 <p><h4>Tech Used:</h4>{frontendArray[frontendIndex].tech}</p>
+                <p><h4>Repo Link:</h4>{frontendArray[frontendIndex].repoLink}</p>
             </div>
             <div hidden className='backend'>
                 <h4 className='type-title'>Back-End: <span className='app-title'><a href={backendArray[backendIndex].link}>{backendArray[backendIndex].app}</a></span></h4>
@@ -128,7 +139,10 @@ export default function Portfolio() {
                 <img style={{ width: '600px', margin: '20px' }} className='backend-img' src={backendArray[backendIndex].image}></img>
                 <button className='right-btn' onClick={() => setBackend(backendIndex == backendArray.length - 1 ? 0 : backendIndex + 1)}><FaArrowRight /></button>
                 <p><h4>Description</h4>{backendArray[backendIndex].description}</p>
-                <p><h4>Tech Used:</h4>{backendArray[backendIndex].tech}</p>            </div>
+                <p><h4>Tech Used:</h4>{backendArray[backendIndex].tech}</p>
+                <p><h4>Repo Link:</h4>{backendArray[backendIndex].repoLink}</p>
+            
+                            </div>
         </div>
     )
 }
